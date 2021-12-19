@@ -38,7 +38,7 @@ print_help_text(){
 reload_suid_binaries_source_cache(){
     bins_html=$(curl -s https://gtfobins.github.io/#+suid)
     
-    bins=$(echo "$bins_html" | awk 'sub(/.+class="bin-name">/, "")' | awk 'sub(/<\/a>.+/, "")')
+    bins=$(echo "$bins_html" | awk 'sub(/\/#suid">SUID<\/a><\/li>/, "")' | awk 'sub(/.*<li><a href="\/gtfobins\//, "")')
 
     echo "$bins" > "$suid_binaries_source_cache_file_path"
 }
