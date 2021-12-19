@@ -4,7 +4,7 @@ Tool that finds and leverages existing root SUID binaries for a root shell. It u
 
 It is written in `Bash` and uses native GNU tools for fetching and processing data (`awk`, `cat`, `comm`, `curl`, `eval`, `find` and `sort`), so it should directly run on GNU/Linux and Unix systems.
 
-Thanks [https://github.com/fssecur3](fssecur3) for introducing me to SUID privesc!
+Thanks [fssecur3](https://github.com/fssecur3) for introducing me to SUID privesc!
 
 ## Instructions
 
