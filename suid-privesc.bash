@@ -63,12 +63,18 @@ find_vulnerable_binaries_for_privesc(){
 
     privescable_binaries=$(eval $match_binaries_names_command)
 
+    echo
+
     if [[ $privescable_binaries == "" ]]; then
         echo "Didn't found any privescable binaries... :("
     else
-        echo "The following binaries are vulnerable for SUID privilege escalation"
+        echo "The following binaries are vulnerable for SUID privilege escalation:"
 
-        echo "$privescable_binaries"
+        echo
+
+        echo "$privescable_binaries" | while read bin; do
+            echo "$bin (https://gtfobins.github.io/gtfobins/$bin/#suid)"
+        done
     fi
 }
 
