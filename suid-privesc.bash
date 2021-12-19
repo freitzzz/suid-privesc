@@ -23,7 +23,7 @@ suid_binaries_source_cache_file_path=".suid_binaries_cache"
 
 # Script input parameters
 
-command_flag=''
+command_flag='-f'
 
 # Script procedures
 
