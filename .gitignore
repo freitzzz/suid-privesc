@@ -80,4 +80,7 @@ zsdoc/data
 /tests/_output/*
 !/tests/_output/.gitkeep
 
+# Cache files
+.suid_binaries_cache
+
 # End of https://www.toptal.com/developers/gitignore/api/macos,zsh,visualstudiocode
